@@ -1,25 +1,27 @@
-// ─── SOAL 1 ─────────────────────────────────────
+// ─── SOAL 1 ─────────────────────────────────────────
 
 let nama: string = "Saidatul Kholidiya";
 let kelas: string = "XIII SIJA 2";
-let nilaiTS: number = 80;
-let nilaiJS: number = 78;
+let nilaiTS: number = 95;
+let nilaiJS: number = 90;
 
+// Hitung rata-rata
 let rataRata: number = (nilaiTS + nilaiJS) / 2;
 
+// Cek kelulusan
 let lulus: boolean = rataRata >= 75;
 
 // Output
-console.log("=== Data Nilai Rapor ===");
-console.log("Nama       :", nama);
-console.log("Kelas      :", kelas);
-console.log("Nilai TS   :", nilaiTS);
-console.log("Nilai JS   :", nilaiJS);
-console.log("Rata-rata  :", rataRata);
-console.log("Lulus      :", lulus);
+console.log("----- DATA NILAI RAPOR ------");
+console.log("Nama           :", nama);
+console.log("Kelas          :", kelas);
+console.log("Nilai TS       :", nilaiTS);
+console.log("Nilai JS       :", nilaiJS);
+console.log("Rata-rata      :", rataRata);
+console.log("Lulus          :", lulus);
 
 
-// ─── SOAL 2 ────────────────────────────────
+// ─── SOAL 2 ──────────────────────────────────────
 
 enum Prioritas {
   Rendah = "RENDAH",
@@ -33,7 +35,8 @@ let daftarTugas: [string, Prioritas][] = [
 ];
 
 // Output
- console.log("=== Daftar Tugas ===");
+console.log(" ------ DAFTAR TUGAS ------");
+
 daftarTugas.forEach((tugas) => {
   console.log(`Tugas: ${tugas[0]} | Prioritas: ${tugas[1]}`);
 });
@@ -46,34 +49,33 @@ type Diskon = number | string;
 function hitungDiskon(harga: number, diskon: Diskon): number {
   let persenDiskon: number = 0;
 
+  // Jika diskon berupa angka
   if (typeof diskon === "number") {
     persenDiskon = diskon;
   }
 
+  // Jika diskon berupa kode voucher
   if (typeof diskon === "string") {
     if (diskon === "MAGANG10") {
       persenDiskon = 10;
     } else if (diskon === "NAWASENA20") {
       persenDiskon = 20;
-    } else {
-      persenDiskon = 0;
     }
   }
 
-  let hargaAkhir: number = harga - (harga * persenDiskon / 100);
+  let jumlahDiskon: number = harga * persenDiskon / 100;
+  let hargaAkhir: number = harga - jumlahDiskon;
 
-  // Output detail
-  console.log(`Harga Awal   : ${harga}`);
-  console.log(`Diskon       : ${persenDiskon}%`);
-  console.log(`Harga Akhir  : ${hargaAkhir}`);
-  console.log("----------------------");
+  console.log("Harga Awal      :", harga);
+  console.log("Diskon          :", `${persenDiskon}%`);
+  console.log("Harga Akhir     :", hargaAkhir);
+  console.log("-------------------");
 
   return hargaAkhir;
 }
 
 // Output
-
-  console.log("=== Detail Diskon ===");
+console.log("----- DETAIL DISKON ------");
 
 hitungDiskon(100000, 10);
 hitungDiskon(100000, "MAGANG10");
