@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // ─── 1. TIPE PRIMITIF ────────────────────────────────────────────
-let namaLengkap = "Nama Lengkap";
-let usia = 30;
+let namaLengkap = "saidatul kholidiya";
+let usia = 18;
 let aktif = true;
 // Type inference — TypeScript bisa tebak sendiri
 let kota = "Malang"; // TypeScript tahu ini string
@@ -11,7 +11,7 @@ let nilai = 95.5; // TypeScript tahu ini number
 // kota = 100;   // Error: Type 'number' is not assignable to type 'string'
 // ─── 2. ANY vs UNKNOWN ───────────────────────────────────────────
 let dataAny = "hello";
-dataAny = 42; // OK — any mematikan semua pengecekan
+dataAny = 17; // OK — any mematikan semua pengecekan
 dataAny = true; // OK — tapi berbahaya!
 let dataUnknown = "test";
 // dataUnknown.toUpperCase(); // Error! Harus cek tipe dulu
@@ -20,7 +20,7 @@ if (typeof dataUnknown === "string") {
 }
 // ─── 3. ARRAY ────────────────────────────────────────────────────
 let nilaiUjian = [85, 92, 78, 90, 88];
-let namaKelas = ["Alice", "Bob", "Charlie"];
+let namaKelas = ["Siti", "Bob", "Charlie"];
 // Array methods — TypeScript tahu tipenya
 const nilaiTertinggi = Math.max(...nilaiUjian); // number
 const semualulus = nilaiUjian.every(n => n >= 75); // boolean
@@ -35,8 +35,8 @@ var StatusMagang;
     StatusMagang["Selesai"] = "SELESAI";
     StatusMagang["Berhenti"] = "BERHENTI";
 })(StatusMagang || (StatusMagang = {}));
-let statusBudi = StatusMagang.Aktif;
-console.log("Status Budi:", statusBudi); // "AKTIF"
+let statusSaida = StatusMagang.Aktif;
+console.log("Status Saida:", statusSaida); // "AKTIF"
 function cekStatus(status) {
     if (status === StatusMagang.Aktif)
         return "Sedang berjalan";
@@ -45,14 +45,14 @@ function cekStatus(status) {
     return "Berhenti di tengah jalan";
 }
 console.log(cekStatus(StatusMagang.Selesai));
-let userId = "USR-001";
-userId = 42; // OK — karena ID bisa string atau number
+let userId = "USR-007";
+userId = 17; // OK — karena ID bisa string atau number
 function formatID(id) {
     if (typeof id === "string") {
         return id.toUpperCase(); // TypeScript tahu id adalah string di sini
     }
     return `ID-${id}`; // TypeScript tahu id adalah number di sini
 }
-console.log(formatID("usr-001")); // "USR-001"
-console.log(formatID(42)); // "ID-42"
+console.log(formatID("usr-007")); // "USR-007"
+console.log(formatID(17)); // "ID-17"
 //# sourceMappingURL=tipe-dasar.js.map

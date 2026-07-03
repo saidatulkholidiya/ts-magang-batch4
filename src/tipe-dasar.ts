@@ -1,6 +1,6 @@
 // ─── 1. TIPE PRIMITIF ────────────────────────────────────────────
-let namaLengkap: string = "Nama Lengkap";
-let usia: number = 30;
+let namaLengkap: string = "saidatul kholidiya";
+let usia: number = 18;
 let aktif: boolean = true;
 
 // Type inference — TypeScript bisa tebak sendiri
@@ -13,7 +13,7 @@ let nilai = 95.5;          // TypeScript tahu ini number
 
 // ─── 2. ANY vs UNKNOWN ───────────────────────────────────────────
 let dataAny: any = "hello";
-dataAny = 42;           // OK — any mematikan semua pengecekan
+dataAny = 17;           // OK — any mematikan semua pengecekan
 dataAny = true;         // OK — tapi berbahaya!
 
 let dataUnknown: unknown = "test";
@@ -26,7 +26,7 @@ if (typeof dataUnknown === "string") {
 
 // ─── 3. ARRAY ────────────────────────────────────────────────────
 let nilaiUjian: number[] = [85, 92, 78, 90, 88];
-let namaKelas: Array<string> = ["Alice", "Bob", "Charlie"];
+let namaKelas: Array<string> = ["Siti", "Bob", "Charlie"];
 
 // Array methods — TypeScript tahu tipenya
 const nilaiTertinggi = Math.max(...nilaiUjian);  // number
@@ -45,8 +45,8 @@ enum StatusMagang {
   Berhenti  = "BERHENTI"
 }
 
-let statusBudi: StatusMagang = StatusMagang.Aktif;
-console.log("Status Budi:", statusBudi); // "AKTIF"
+let statusSaida: StatusMagang = StatusMagang.Aktif;
+console.log("Status Saida:", statusSaida); // "AKTIF"
 
 function cekStatus(status: StatusMagang): string {
   if (status === StatusMagang.Aktif) return "Sedang berjalan";
@@ -61,8 +61,8 @@ console.log(cekStatus(StatusMagang.Selesai));
 // Variabel bisa berisi lebih dari satu tipe
 type ID = string | number;
 
-let userId: ID = "USR-001";
-userId = 42;  // OK — karena ID bisa string atau number
+let userId: ID = "USR-007";
+userId = 17;  // OK — karena ID bisa string atau number
 
 function formatID(id: ID): string {
   if (typeof id === "string") {
@@ -71,5 +71,5 @@ function formatID(id: ID): string {
   return `ID-${id}`;           // TypeScript tahu id adalah number di sini
 }
 
-console.log(formatID("usr-001")); // "USR-001"
-console.log(formatID(42));        // "ID-42"
+console.log(formatID("usr-007")); // "USR-007"
+console.log(formatID(17));        // "ID-17"
