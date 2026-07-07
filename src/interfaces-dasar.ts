@@ -22,7 +22,7 @@ const peserta2: Peserta = {
   id             : 2,
   nama           : "Laela Nurul Hidayah",
   sekolah        : "SMK Negeri 5 Malang",
-  fase           : 1
+  fase           : 5
 };
 
 console.log("=== DATA PESERTA ===");
