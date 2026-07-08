@@ -1,12 +1,7 @@
 // ─── SOAL 1 : TYPE ALIAS ─────────────────────────────────────
 
 // Type Alias Union
-type FaseProgram =
-  | "Fase 1"
-  | "Fase 2"
-  | "Fase 3"
-  | "Fase 4"
-  | "Fase 5";
+type FaseProgram = | "Fase 1" | "Fase 2" | "Fase 3" | "Fase 4" | "Fase 5";
 
 // Type Alias Primitif
 type NilaiAspek = number;
