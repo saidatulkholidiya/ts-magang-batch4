@@ -15,7 +15,7 @@ class Mentor {
     }
 }
 // Object
-const mentor = new Mentor("Pak Andi", ["HTML", "CSS", "JavaScript"]);
+const mentor = new Mentor("Pak Fajar", ["HTML", "CSS", "JavaScript"]);
 mentor.tambahKeahlian("TypeScript");
 // Output
 console.log("=== MENTOR ===");

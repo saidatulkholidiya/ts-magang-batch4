@@ -18,7 +18,7 @@ class Mentor {
 
 // Object
 const mentor = new Mentor(
-  "Pak Andi",
+  "Pak Fajar Ariadi",
   ["HTML", "CSS", "JavaScript"]
 );
 
