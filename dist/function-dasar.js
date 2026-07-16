@@ -1,6 +1,4 @@
-"use strict";
 // ─── SOAL 1 : HITUNG NILAI AKHIR ──────────────────────────────
-Object.defineProperty(exports, "__esModule", { value: true });
 function hitungNilaiAkhir(tugas, uts, uas) {
     return (tugas * 0.3) + (uts * 0.3) + (uas * 0.4);
 }
@@ -39,4 +37,5 @@ function formatDurasi(menit, tampilkanDetik = false) {
 console.log("\n=== FORMAT DURASI ===");
 console.log(formatDurasi(150));
 console.log(formatDurasi(150, true));
+export {};
 //# sourceMappingURL=function-dasar.js.map

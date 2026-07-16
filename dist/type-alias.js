@@ -1,6 +1,4 @@
-"use strict";
 // ─── SOAL 1 : TYPE ALIAS ─────────────────────────────────────
-Object.defineProperty(exports, "__esModule", { value: true });
 const hasilPenilaian = {
     kehadiran: 10,
     materi: 9,
@@ -109,4 +107,5 @@ filterPeserta(daftarPeserta, "berhenti").forEach((peserta) => {
     console.log("Status          :", peserta.status);
     console.log("--------------------------------");
 });
+export {};
 //# sourceMappingURL=type-alias.js.map

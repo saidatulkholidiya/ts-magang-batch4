@@ -1,6 +1,4 @@
-"use strict";
 // ─── SOAL 1 : INTERFACE PESERTA ────────────────────────────────
-Object.defineProperty(exports, "__esModule", { value: true });
 const peserta1 = {
     id: 1,
     nama: "Saidatul Kholidiya",
@@ -73,4 +71,5 @@ if (hasilCari) {
     console.log("Sekolah       :", hasilCari.sekolah);
     console.log("Fase          :", hasilCari.fase);
 }
+export {};
 //# sourceMappingURL=interfaces-dasar.js.map

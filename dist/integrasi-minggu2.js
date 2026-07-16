@@ -1,6 +1,4 @@
-"use strict";
 // ─── STUDI KASUS : TASK MANAGER ───────────────────────────────
-Object.defineProperty(exports, "__esModule", { value: true });
 // ─── DATA USER ────────────────────────────────────────────────
 const user1 = {
     id: 1,
@@ -145,4 +143,5 @@ logEvent({
     taskId: 5,
     reason: "Task dibatalkan"
 });
+export {};
 //# sourceMappingURL=integrasi-minggu2.js.map

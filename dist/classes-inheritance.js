@@ -1,6 +1,4 @@
-"use strict";
 // ─── SOAL 1 : CLASS DASAR ────────────────────────────────────
-Object.defineProperty(exports, "__esModule", { value: true });
 // Class Mentor
 class Mentor {
     constructor(nama, keahlian) {
@@ -15,7 +13,7 @@ class Mentor {
     }
 }
 // Object
-const mentor = new Mentor("Pak Fajar", ["HTML", "CSS", "JavaScript"]);
+const mentor = new Mentor("Pak Fajar Ariadi", ["HTML", "CSS", "JavaScript"]);
 mentor.tambahKeahlian("TypeScript");
 // Output
 console.log("=== MENTOR ===");
@@ -95,4 +93,5 @@ console.log("\n=== JURNAL HARIAN ===");
 console.log(jurnal.deskripsi());
 console.log("\n=== SPRINT TASK ===");
 console.log(sprint.deskripsi());
+export {};
 //# sourceMappingURL=classes-inheritance.js.map

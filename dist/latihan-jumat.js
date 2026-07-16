@@ -1,6 +1,4 @@
-"use strict";
 // ─── SOAL 1 ─────────────────────────────────────────
-Object.defineProperty(exports, "__esModule", { value: true });
 let nama = "Saidatul Kholidiya";
 let kelas = "XIII SIJA 2";
 let nilaiTS = 95;
@@ -62,4 +60,5 @@ hitungDiskon(100000, 10);
 hitungDiskon(100000, "MAGANG10");
 hitungDiskon(100000, "NAWASENA20");
 hitungDiskon(100000, "ABC");
+export {};
 //# sourceMappingURL=latihan-jumat.js.map

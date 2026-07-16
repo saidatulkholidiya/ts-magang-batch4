@@ -1,6 +1,4 @@
-"use strict";
 // ─── SOAL 1 : DISCRIMINATED UNION PEMBAYARAN ───────────────────
-Object.defineProperty(exports, "__esModule", { value: true });
 // Function
 function getStatusLabel(payment) {
     switch (payment.status) {
@@ -115,4 +113,5 @@ console.log(executeCommand({ command: "remove", id: 2 }));
 console.log(executeCommand({ command: "list" }));
 console.log(executeCommand({ command: "list", filter: "Elektronik" }));
 console.log(executeCommand({ command: "clear" }));
+export {};
 //# sourceMappingURL=discriminated-union.js.map

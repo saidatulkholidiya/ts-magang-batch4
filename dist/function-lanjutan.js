@@ -1,6 +1,4 @@
-"use strict";
 // ─── SOAL 1 : FUNCTION OVERLOADING ────────────────────────────
-Object.defineProperty(exports, "__esModule", { value: true });
 // Data Peserta
 const daftarPeserta = [
     {
@@ -70,4 +68,5 @@ const pesertaLulus = daftarPeserta.filter(buatFilterNilai(85));
 console.log("\n=== FILTER NILAI ===");
 console.log("Peserta dengan nilai >= 85");
 console.log(pesertaLulus);
+export {};
 //# sourceMappingURL=function-lanjutan.js.map

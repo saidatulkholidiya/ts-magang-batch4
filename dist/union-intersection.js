@@ -1,6 +1,4 @@
-"use strict";
 // ─── SOAL 1 : UNION TYPE ─────────────────────────────────────
-Object.defineProperty(exports, "__esModule", { value: true });
 // Function
 function renderContent(content) {
     if (content.type === "text") {
@@ -113,4 +111,5 @@ console.log("Product State 2");
 console.log("Products    :", productState2.products);
 console.log("Loading     :", productState2.isLoading);
 console.log("Error       :", productState2.error);
+export {};
 //# sourceMappingURL=union-intersection.js.map

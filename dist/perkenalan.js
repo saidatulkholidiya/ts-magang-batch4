@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const namaSaya = "saidatul kholidiya";
 const asalSekolah = "SMK Negeri 6 Malang";
 const kabupaten = "Malang";
@@ -10,4 +8,5 @@ function perkenalan(nama, sekolah, sudahJS) {
     return `Nama saya ${nama} dari ${sekolah}. Saya ${statusJS} belajar JavaScript sebelumnya.`;
 }
 console.log(perkenalan(namaSaya, asalSekolah, sudahBelajarJavaScript));
+export {};
 //# sourceMappingURL=perkenalan.js.map

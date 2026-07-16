@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // ─── 1. TIPE PRIMITIF ────────────────────────────────────────────
 let namaLengkap = "saidatul kholidiya";
 let usia = 18;
@@ -55,4 +53,5 @@ function formatID(id) {
 }
 console.log(formatID("usr-007")); // "USR-007"
 console.log(formatID(17)); // "ID-17"
+export {};
 //# sourceMappingURL=tipe-dasar.js.map
